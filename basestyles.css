@@ -14,3 +14,18 @@ button {
     color: beige;
     border-radius: 5px;
 }
+#menubutton {
+    background-color: brown;
+    color: beige;
+    border-radius: 5px;
+    width: 200px;
+    align-self: center;
+}
+
+#relatedwebsitesbutton {
+    background-color: brown;
+    color: beige;
+    border-radius: 5px;
+    width: 250px;
+    align-self: normal;
+}
