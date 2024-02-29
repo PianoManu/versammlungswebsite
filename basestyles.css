@@ -1,8 +1,21 @@
 
 p {
     color: brown;
+    text-align: justify;
 }
-a {
+a:link {
+    color: rgb(2, 15, 119);
+    font-weight: 600;
+}
+a:visited {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+a:hover {
+    color: rgb(2, 15, 119);
+    font-weight: 600;
+}
+a:active {
     color: rgb(2, 15, 119);
     font-weight: 600;
 }
@@ -19,6 +32,15 @@ button {
     color: beige;
     border-radius: 5px;
     padding: 4px;
+    box-shadow: 5px 5px 5px gray;
+}
+button:hover {
+    color: lightgoldenrodyellow;
+    background-color : rgb(99, 39, 4);
+}
+button:active {
+    color: white;
+    background-color : rgb(43, 16, 1);
 }
 .menubutton {
     font-size: large;
@@ -54,10 +76,11 @@ button {
     border-radius: 20px;
     padding: 10px;
     max-width: fit-content;
-    position: relative;
+    position: fixed;
     left: 10px;
     bottom: 10px;
-
+    background-color: beige;
+    box-shadow: -5px -5px 5px gray;
 }
 
 #navigator {
@@ -70,10 +93,14 @@ button {
     color : rgb(99, 39, 4);
     font-family: 'Roboto Condensed', sans-serif;
     background-color: beige;
-    width: 80%;
+    width: 70%;
     position: relative;
-    left: 10%;
+    margin-left: auto;
     top: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 5px gray;
 }
 
 .title{
