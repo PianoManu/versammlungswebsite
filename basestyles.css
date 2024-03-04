@@ -111,3 +111,7 @@ button:active {
     padding: 10px;
     max-width: fit-content;
 }
+.footer{
+    font-size: small;
+    text-align: center;
+}
