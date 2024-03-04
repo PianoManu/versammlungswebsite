@@ -115,3 +115,17 @@ button:active {
     font-size: small;
     text-align: center;
 }
+
+#backhome{
+    position:fixed;
+    left: 10px;
+    top: 10px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: brown;
+    border-radius: 10px;
+    padding: 3px;
+    max-width: fit-content;
+    background-color: beige;
+    box-shadow: -5px -5px 5px gray;
+}
