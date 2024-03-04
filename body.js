@@ -1,3 +1,4 @@
+console.log(`Loading ./body.js for ${document.URL}`)
 const index_body = document.querySelector(".loadscripts");
 const index_body_new_item = document.createElement("div");
 index_body_new_item.innerHTML=`
