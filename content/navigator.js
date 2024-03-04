@@ -4,6 +4,11 @@ navigator_menu_new_item.innerHTML = `
 <p id="navigator">
     Navigator
 </p>
+<a href="../index.html" target="_self"
+    title="Zurück zur Startseite!">
+    <button class="menubutton"><i class="fa-solid fa-house"></i> Startseite</button>
+</a>
+<br>
 <a href="about_us.html" target="_self"
     title="Hier finden Sie Informationen über uns und unsere Glaubensgrundsätze!">
     <button class="menubutton">Über uns</button>
