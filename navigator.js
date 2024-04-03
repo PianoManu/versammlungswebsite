@@ -30,8 +30,8 @@ ${addIndex}
 </a>
 <br>
 <a href="${navigator_hierarchy_level}content/meeting_information.html" target="_self"
-    title="Hier finden Sie Informationen zu unseren Versammlungszeiten!">
-    <button class="menubutton">Versammlungszeiten</button>
+    title="Hier finden Sie Informationen zu unseren Versammlungsinformationen!">
+    <button class="menubutton">Versammlungsinformationen</button>
 </a>
 <br>
 <a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
