@@ -5,3 +5,7 @@ index_body_new_item.innerHTML=`
 <script src="navigator.js"></script>
 `;
 index_body.appendChild(index_body_new_item);
+
+function openDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}

@@ -32,7 +32,7 @@ button {
     color: beige;
     border-radius: 5px;
     padding: 4px;
-    box-shadow: -5px -5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
 }
 button:hover {
     color: lightgoldenrodyellow;
@@ -70,17 +70,10 @@ button:active {
 }
 
 .menu {
-    border-style: outset;
-    border-width: 8px;
-    border-color: brown;
-    border-radius: 20px;
-    padding: 10px;
     max-width: fit-content;
     position: fixed;
     left: 10px;
-    bottom: 10px;
-    background-color: beige;
-    box-shadow: -5px -5px 5px gray;
+    top: -10px;
 }
 
 #navigator {
@@ -88,6 +81,18 @@ button:active {
     font-weight: 900;
     text-align: center;
 }
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+  }
 
 .text {
     color : rgb(99, 39, 4);
@@ -100,7 +105,7 @@ button:active {
     margin-top: 50px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: -5px -5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .title{
@@ -127,5 +132,9 @@ button:active {
     padding: 3px;
     max-width: fit-content;
     background-color: beige;
-    box-shadow: -5px -5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.show{
+    display: block;
 }

@@ -20,9 +20,9 @@ if (!isIndex) {
 const navigator_menu = document.querySelector(".menu");
 const navigator_menu_new_item = document.createElement("h1");
 navigator_menu_new_item.innerHTML = `
-<p id="navigator">
-    Navigator
-</p>
+<div class="dropdown">
+<button class="menubutton dropbtn" onclick="openDropdown()"><i class="fa-solid fa-bars"></i> Menu</button>
+<div id="myDropdown" class="dropdown-content">
 ${addIndex}
 <a href="${navigator_hierarchy_level}content/about_us.html" target="_self"
     title="Hier finden Sie Informationen über uns und unsere Glaubensgrundsätze!">
@@ -42,6 +42,8 @@ ${addIndex}
 <a href="${navigator_hierarchy_level}content/activities.html" target="_self"
     title="Hier finden Sie Informationen über einmalige und wiederkehrende Gemeindeaktivitäten!">
     <button class="menubutton">Gemeindeaktivitäten</button>
-</a>`;
+</a>
+</div>
+</div>`;
 
 navigator_menu.appendChild(navigator_menu_new_item);
