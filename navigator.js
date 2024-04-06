@@ -21,8 +21,9 @@ const navigator_menu = document.querySelector(".menu");
 const navigator_menu_new_item = document.createElement("h1");
 navigator_menu_new_item.innerHTML = `
 <div class="dropdown">
-<button class="menubutton dropbtn" onclick="openDropdown()"><i class="fa-solid fa-bars"></i> Menu</button>
+<button id="menubutton_main" class="menubutton dropbtn" onclick="openDropdown()"><i class="fa-solid fa-bars"></i> Menu anzeigen</button>
 <div id="myDropdown" class="dropdown-content">
+<div style="height: 10px;">&nbsp;</div>
 ${addIndex}
 <a href="${navigator_hierarchy_level}content/about_us.html" target="_self"
     title="Hier finden Sie Informationen über uns und unsere Glaubensgrundsätze!">

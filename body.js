@@ -8,4 +8,9 @@ index_body.appendChild(index_body_new_item);
 
 function openDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
+    if(document.getElementById('myDropdown').classList.contains("show")) {
+        document.getElementById('menubutton_main').innerHTML='<i class="fa-solid fa-bars"></i> Menu verbergen'
+    } else {
+        document.getElementById('menubutton_main').innerHTML='<i class="fa-solid fa-bars"></i> Menu anzeigen'
+    }
 }
