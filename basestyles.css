@@ -46,6 +46,29 @@ button:active {
     color: white;
     background-color : rgb(43, 16, 1);
 }
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 100%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color : rgb(99, 39, 4);
+  }
+
+.contact_form {
+    color: brown;
+}
+
 .menubutton {
     font-size: large;
     background-color: brown;
@@ -53,6 +76,7 @@ button:active {
     border-radius: 4px;
     width: 250px;
     padding: 12px;
+    cursor: pointer;
 }
 
 .relatedwebsitesbutton {
