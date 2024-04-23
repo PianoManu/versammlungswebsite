@@ -35,14 +35,14 @@ ${addIndex}
     <button class="menubutton">Versammlungsinformationen</button>
 </a>
 <br>
-<a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
-    title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
-    <button class="menubutton">Aktuelle Veranstaltungen</button>
-</a>
-<br>
 <a href="${navigator_hierarchy_level}content/activities.html" target="_self"
     title="Hier finden Sie Informationen über einmalige und wiederkehrende Gemeindeaktivitäten!">
     <button class="menubutton">Gemeindeaktivitäten</button>
+</a>
+<br>
+<a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
+    title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
+    <button class="menubutton">Aktuelle Veranstaltungen</button>
 </a>
 </div>
 </div>`;
