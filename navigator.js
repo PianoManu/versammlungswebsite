@@ -27,22 +27,22 @@ navigator_menu_new_item.innerHTML = `
 ${addIndex}
 <a href="${navigator_hierarchy_level}content/about_us.html" target="_self"
     title="Hier finden Sie Informationen über uns und unsere Glaubensgrundsätze!">
-    <button class="menubutton">Über uns</button>
+    <button class="menubutton"><i class="fa-solid fa-people-group"></i> Über uns</button>
 </a>
 <br>
 <a href="${navigator_hierarchy_level}content/meeting_information.html" target="_self"
-    title="Hier finden Sie Informationen zu unseren Versammlungsinformationen!">
-    <button class="menubutton">Versammlungsinformationen</button>
+    title="Hier finden Sie allgemeine Versammlungsinformationen!">
+    <button class="menubutton"><i class="fa-solid fa-circle-info"></i> Versammlungsinfos</button>
 </a>
 <br>
 <a href="${navigator_hierarchy_level}content/activities.html" target="_self"
     title="Hier finden Sie Informationen über einmalige und wiederkehrende Gemeindeaktivitäten!">
-    <button class="menubutton">Gemeindeaktivitäten</button>
+    <button class="menubutton"><i class="fa-solid fa-handshake"></i> Gemeindeaktivitäten</button>
 </a>
 <br>
 <a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
     title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
-    <button class="menubutton">Aktuelle Veranstaltungen</button>
+    <button class="menubutton"><i class="fa-solid fa-calendar-days"></i> Aktuelle Veranstaltungen</button>
 </a>
 </div>
 </div>`;
