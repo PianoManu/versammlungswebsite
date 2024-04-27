@@ -8,7 +8,7 @@ if (document.URL.includes("beliefs")) {
 }
 template = document.createElement('template');
 template.innerHTML = `
-<img src="${hierarchy_level_body}/img/photos/edited/IMG20230615122424.svg" class="banner">
+<img src="${hierarchy_level_body}img/photos/edited/IMG20230615122424.svg" class="banner">
 <hr class="hr_brown">
 `
 document.body.prepend(template.content);
