@@ -107,6 +107,7 @@ p {
     position: fixed;
     left: 20px;
     top: 0px;
+    z-index: 10;
 }
 
 .menubutton {
