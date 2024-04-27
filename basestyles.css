@@ -72,6 +72,14 @@ input[type=text], select, textarea {
     color: brown;
 }
 
+.hr_brown{
+    color: brown;
+    background-color: brown;
+    display: block;
+    height: 20px;
+    margin-top: -5px;
+}
+
 .menubutton {
     font-size: large;
     background-color: brown;
@@ -134,8 +142,8 @@ input[type=text], select, textarea {
     background-color: beige;
     position: relative;
     margin-left: auto;
-    margin-top: 0px;
-    padding: 20px;
+    margin-top: -10px;
+    padding: 50px;
     border-color: brown;
     border-width: 10px;
 }
@@ -148,7 +156,7 @@ input[type=text], select, textarea {
     padding: 10px;
     max-width: fit-content;
     margin-top: -50px;
-    top: 50px;
+    top: 10px;
 }
 .footer{
     font-size: small;
