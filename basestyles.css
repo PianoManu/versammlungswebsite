@@ -148,6 +148,29 @@ p {
     position: relative;
 }
 
+.slides_button{
+    font-size: x-large;
+    text-shadow: rgb(255, 255, 255) 1px 0 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: brown;
+    border-radius: 0px;
+    border-color: rgba(0,0,0,0);
+    width: 50px;
+    height:100%;
+    padding: 4px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    box-shadow: 0px 0px 0px gray;
+    border-radius: 20px;
+}
+
+.slides_button:hover {
+    color: brown;
+    background-color : rgba(255, 255, 255, 0.4);
+}
+
 .slides_default {
     position: absolute;
 }

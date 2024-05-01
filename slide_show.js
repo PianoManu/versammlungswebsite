@@ -1,5 +1,6 @@
 console.log(`Loading slide_show.js for file "${document.URL}..."`)
 let slideIndex = 0;
+let timeoutID = 0;
 showSlides();
 
 function showSlides() {
@@ -25,5 +26,22 @@ function showSlides() {
     slides[bot_img].style.top = "0%";
     slides[bot_img].style.position = "absolute";
     slides[bot_img].style.zIndex = 1;
-    setTimeout(showSlides, 10000); // Change image every 10 seconds
+    timeoutID = setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+
+function prevSlide() {
+    clearTimeout(timeoutID);
+    let slides = document.getElementsByClassName("slides_default");
+    if (slideIndex <= 1) {
+        slideIndex = slides.length + 1;
+    } 
+    slideIndex = slideIndex - 2;
+    console.log(`Previous Slide ${slideIndex}`);
+    showSlides();
+}
+
+function nextSlide() {
+    clearTimeout(timeoutID);
+    console.log(`Next Slide ${slideIndex}`);
+    showSlides();
 }
