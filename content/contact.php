@@ -17,7 +17,15 @@
             Felder mit Stern ( * ) müssen ausgefüllt werden, bevor das Kontaktformular abgeschickt werden kann.
             Ihr Name (wenn angegeben) und ihre E-Mail-Adresse werden ausschließlich für Rückantworten gespeichert und verwendet, und nicht an Dritte weitergegeben.
         <div class="contact_form">
-            <form action="action_page.php">
+            <?php
+                if(isset($_POST["submit"])){
+                    mail("kontakt@christen-in-ilmenau.de", "Neues Kontaktformular abgeschickt", "Angegebener Name: ".$_POST["name"]."\n<br>Email: ".$_POST["email"]."\n<br>Nachricht: ".$_POST["subject"]);
+                    ?>
+                    <h1>Ihr Kontaktformular wurde versendet!</h1>
+                    <?php
+                }
+                ?>
+            <form method="post" action="contact.php">
           
               <label for="name">Name (optional): </label>
               <input type="text" id="name" name="name" placeholder="Ihr Name...">
@@ -28,7 +36,7 @@
               <label for="subject">* Was möchten Sie uns mitteilen?</label>
               <textarea id="subject" name="subject" placeholder="Ihre Fragen, Anmerkungen, Anregungen..." style="height:200px" required></textarea>
           
-              <input type="submit" value="Absenden" class="menubutton bottombutton">
+              <input type="submit" name="submit" value="Absenden" class="menubutton bottombutton">
           
             </form>
           </div>
