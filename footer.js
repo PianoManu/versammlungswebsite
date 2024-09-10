@@ -20,7 +20,6 @@ template.innerHTML=`
     <br>
     <div class="footer">
         &copy; Christen in Ilmenau 2024
-        <b><i>TODO Footer überdenken</i></b>
     </div>
 </p>
 `

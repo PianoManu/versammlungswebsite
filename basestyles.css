@@ -42,7 +42,7 @@ button:hover {
     background-color : rgb(99, 39, 4);
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 2px solid #ccc; /* Gray border */
