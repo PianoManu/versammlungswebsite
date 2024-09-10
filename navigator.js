@@ -40,7 +40,7 @@ ${addIndex}
     <button class="menubutton"><i class="fa-solid fa-handshake"></i> Gemeindeaktivitäten</button>
 </a>
 <br>
-<a href="${navigator_hierarchy_level}content/contact.php" target="_self"
+<a href="${navigator_hierarchy_level}content/contact.html" target="_self"
     title="Hier finden Sie unser Kontaktformular!">
     <button class="menubutton"><i class="fa-solid fa-pen"></i> Kontaktformular</button>
 </a>
