@@ -16,8 +16,8 @@
             Schreiben Sie uns gern eine Mail an <a href="mailto:kontakt@christen-in-ilmenau.de" target="_blank">kontakt@christen-in-ilmenau.de</a>, oder nutzen Sie unser Kontaktformular.
             Felder mit Stern ( * ) müssen ausgefüllt werden, bevor das Kontaktformular abgeschickt werden kann.
             Ihr Name (wenn angegeben) und ihre E-Mail-Adresse werden ausschließlich für Rückantworten gespeichert und verwendet.
-        <div class="contact_form">
-            <form action="https://formsubmit.co/kontakt@christen-in-ilmenau.de" method="POST">
+        <div class="contact_form" id="contact_form_cls">
+            <form action="https://formsubmit.co/02e3f4e565214d4ed81805174b47ebbd" method="POST">
           
                 <label for="name">Name oder Pseudonym (optional): </label>
                 <input type="text" id="name" name="name" placeholder="Ihr Name oder Pseudonym...">
@@ -41,10 +41,17 @@
                         if (is_valid_email & document.getElementById("subject").value != "") {
                             console.log("Submitting form...")
                             document.getElementById("submit_form").value="Formular wird abgeschickt...";
+                            document.getElementById("form_sent_wait_notif").hidden = false;
                         }
                      }
                  </script>
                 <input type="submit" name="submit" id="submit_form" value="Absenden" onclick="changeValue()" class="menubutton bottombutton">
+
+                <div id="form_sent_wait_notif" hidden>
+                    <p>
+                        Das Übermitteln des Formulars kann einige Sekunden dauern...
+                    </p>
+                </div>
           
             </form>
           </div>
