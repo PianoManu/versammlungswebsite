@@ -15,20 +15,36 @@
         <p>
             Schreiben Sie uns gern eine Mail an <a href="mailto:kontakt@christen-in-ilmenau.de" target="_blank">kontakt@christen-in-ilmenau.de</a>, oder nutzen Sie unser Kontaktformular.
             Felder mit Stern ( * ) müssen ausgefüllt werden, bevor das Kontaktformular abgeschickt werden kann.
-            Ihr Name (wenn angegeben) und ihre E-Mail-Adresse werden ausschließlich für Rückantworten gespeichert und verwendet, und nicht an Dritte weitergegeben.
+            Ihr Name (wenn angegeben) und ihre E-Mail-Adresse werden ausschließlich für Rückantworten gespeichert und verwendet.
         <div class="contact_form">
             <form action="https://formsubmit.co/kontakt@christen-in-ilmenau.de" method="POST">
           
-              <label for="name">Name (optional): </label>
-              <input type="text" id="name" name="name" placeholder="Ihr Name...">
+                <label for="name">Name oder Pseudonym (optional): </label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name oder Pseudonym...">
 
-              <label for="email">* E-Mail-Adresse:</label>
-              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse..." required>
-          
-              <label for="subject">* Was möchten Sie uns mitteilen?</label>
-              <textarea id="subject" name="subject" placeholder="Ihre Fragen, Anmerkungen, Anregungen..." style="height:200px" required></textarea>
-          
-              <input type="submit" name="submit" value="Absenden" class="menubutton bottombutton">
+                <label for="email">* E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse..." required>
+            
+                <label for="subject">* Was möchten Sie uns mitteilen?</label>
+                <textarea id="subject" name="subject" placeholder="Ihre Fragen, Anmerkungen, Anregungen..." style="height:200px" required></textarea>
+
+                <b>
+                    Zum Übermitteln Ihrer Anfrage wird der Dienst <a href="https://formsubmit.co/" target="_blank">FormSubmit</a> verwendet.
+                    Weitere Informationen finden Sie in unserer <a href="privacy_policy.html">Datenschutzerklärung</a>.
+                </b>
+                <br>
+                <br>
+                <script>
+                    function changeValue(){
+                        var email = document.getElementById("email").value
+                        var is_valid_email = email.includes("@") & email.split("@").length == 2 & email.split("@")[0] != "" & email.split("@")[1] != ""
+                        if (is_valid_email & document.getElementById("subject").value != "") {
+                            console.log("Submitting form...")
+                            document.getElementById("submit_form").value="Formular wird abgeschickt...";
+                        }
+                     }
+                 </script>
+                <input type="submit" name="submit" id="submit_form" value="Absenden" onclick="changeValue()" class="menubutton bottombutton">
           
             </form>
           </div>
