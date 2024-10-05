@@ -80,6 +80,10 @@ p {
     width: 150px;
 }
 
+.centered_text{
+    text-align: center;
+}
+
 .contact_form {
     color: brown;
 }
@@ -137,7 +141,9 @@ p {
 
 .relatedwebsitesbutton {
     font-size: large;
-    width: 250px;
+    min-width: 250px;
+    width: 50%;
+    min-height: 4em;
 }
 
 .show{
