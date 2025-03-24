@@ -152,6 +152,8 @@ p {
 
 .slideshow {
     position: relative;
+    width: 80%;
+    left: 10%;
 }
 
 .slides_button{
@@ -222,6 +224,16 @@ p {
     max-width: fit-content;
     width: 100%;
     border-radius: 20px;
+}
+
+.text_img_fade_in {
+    text-align: center;
+    margin: auto;
+    animation-name: slides_fade_in;
+    animation-duration: 3s;
+    width: 50%;
+    min-width: 250px;
+    mix-blend-mode: multiply;
 }
 
 .title{
