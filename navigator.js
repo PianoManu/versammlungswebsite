@@ -40,11 +40,6 @@ ${addIndex}
     <button class="menubutton"><i class="fa-solid fa-handshake"></i> Gemeindeaktivitäten</button>
 </a>
 <br>
-<a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
-    title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
-    <button class="menubutton"><i class="fa-solid fa-calendar-days"></i> Aktuelle Veranstaltungen</button>
-</a>
-<br>
 <a href="${navigator_hierarchy_level}content/contact.html" target="_self"
     title="Hier finden Sie unser Kontaktformular!">
     <button class="menubutton"><i class="fa-solid fa-pen"></i> Kontaktformular</button>
