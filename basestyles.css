@@ -106,6 +106,48 @@ p {
     margin-top: -5px;
 }
 
+.info-box {
+  /* keep your existing styles… */
+  background-color: beige;
+  border: 1px solid brown;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0;               /* remove outside margins */
+  box-sizing: border-box;  /* ensure padding doesn’t break width */
+  text-align: center;
+  
+  /* new “banner” styles */
+  position: fixed;         /* pin it to the viewport */
+  top: 10%;                  /* at the very top */
+  left: 10%;                 /* full width from left… */
+  width: 80%;             /* …to right edge */
+  z-index: 9999;           /* sit above all other content */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.info-box-close-btn {
+  /* tweak positioning inside the fixed banner */
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.info-box-text {
+    color : rgb(99, 39, 4);
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: beige;
+    position: relative;
+    margin-left: auto;
+    margin-top: -40px;
+    width: 80%;
+    left: -10%;
+    padding: 0%;
+    font-size: large;
+    border-color: brown;
+}
+
 .menu {
     max-width: fit-content;
     position: fixed;

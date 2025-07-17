@@ -69,6 +69,42 @@
         <div class="footer">
         </div>
     </div>
+    <div id="infoBox" class="info-box">
+        <span class="info-box-close-btn" onclick="closeInfoBox()">×</span>
+        <p>
+            <br>
+            <div class="info-box-text">
+                Am <b>Sonntag, 27.07.2025</b> finden beide Gemeindestunden (Gottesdienst mit Abendmahl, sowie Predigt) <i>vormittags</i> statt.
+                Der Gottesdienst startet wie gewohnt um 9:30 Uhr.
+                Die Predigt beginnt dann im Anschluss gegen 11:00 Uhr.
+            </div>
+        </p>
+    </div>
+    <script>
+        const hideAfterDate = new Date("2025-07-28"); // Set your deadline date here (YYYY-MM-DD)
+        const now = new Date();
+        const box = document.getElementById("infoBox");
+        console.log(now)
+        console.log(hideAfterDate)
+
+        // Check if the current date is before the deadline
+        if (now < hideAfterDate) {
+            // Only show the box if it hasn't been manually closed
+            if (!localStorage.getItem("infoBoxClosed")) {
+            box.style.display = "block";
+            }
+            console.log("infoBox");
+        } else {
+            // always hide if past cutoff or already closed
+            box.style.display = "none";
+            console.log("infoBoxClose");
+        }
+
+        function closeInfoBox() {
+            document.getElementById("infoBox").style.display = "none";
+            localStorage.setItem("infoBoxClosed", "true");
+        }
+    </script>
     <div class="loadscripts">
     
     </div>
