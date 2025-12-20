@@ -19,7 +19,7 @@ template.innerHTML=`
     <br>
     <br>
     <div class="footer">
-        &copy; Christen in Ilmenau 2025
+        &copy; Christen in Ilmenau 2026
     </div>
 </p>
 `
