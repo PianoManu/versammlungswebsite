@@ -34,6 +34,13 @@ ${addIndex}
     title="Hier finden Sie allgemeine Versammlungsinformationen!">
     <button class="menubutton"><i class="fa-solid fa-circle-info"></i> Gemeindeinformationen</button>
 </a>
+
+<br>
+<a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
+    title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
+    <button class="menubutton"><i class="fa-solid fa-calendar-days"></i> Aktuelle Veranstaltungen</button>
+</a>
+
 <br>
 <a href="${navigator_hierarchy_level}content/activities.html" target="_self"
     title="Hier finden Sie Informationen über einmalige und wiederkehrende Gemeindeaktivitäten!">
@@ -48,13 +55,3 @@ ${addIndex}
 </div>`;
 
 navigator_menu.appendChild(navigator_menu_new_item);
-
-
-
-/**
-<br>
-<a href="${navigator_hierarchy_level}content/current_news.html" target="_self"
-    title="Hier finden Sie Informationen über aktuelle Veranstaltungen und Termine!">
-    <button class="menubutton"><i class="fa-solid fa-calendar-days"></i> Aktuelle Veranstaltungen</button>
-</a>
-*/
