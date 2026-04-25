@@ -3,7 +3,7 @@ let hierarchy_level = "";
 if (document.URL.includes("content")) {
     hierarchy_level = "../";
 }
-if (document.URL.includes("beliefs")) {
+if (document.URL.includes("beliefs") | document.URL.includes("events")) {
     hierarchy_level = "../../";
 }
 template = document.createElement('template')

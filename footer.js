@@ -3,7 +3,7 @@ let footer_hierarchy_level = "";
 if (document.URL.includes("content")) {
     footer_hierarchy_level = "../";
 }
-if (document.URL.includes("beliefs")) {
+if (document.URL.includes("beliefs") | document.URL.includes("events")) {
     footer_hierarchy_level = "../../";
 }
 template = document.querySelector('.footer')

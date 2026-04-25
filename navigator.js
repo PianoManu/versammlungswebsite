@@ -3,7 +3,7 @@ let navigator_hierarchy_level = "";
 if (document.URL.includes("content")) {
     navigator_hierarchy_level = "../";
 }
-if (document.URL.includes("beliefs")) {
+if (document.URL.includes("beliefs") | document.URL.includes("events")) {
     navigator_hierarchy_level = "../../";
 }
 let isIndex = Boolean(document.URL.includes("index.html"));
